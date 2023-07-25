@@ -27,38 +27,18 @@ const chainStore = useBlockchain()
   <div class="">
     <div class="flex md:!flex-row flex-col items-center justify-center mb-6 mt-14 gap-2">
       <div class="w-16 rounded-full">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 150.000000 132.000000"
-          preserveAspectRatio="xMidYMid meet">
-          <g transform="translate(0.000000,132.000000) scale(0.100000,-0.100000)"
-          :fill="chainStore.current?.themeColor||'#666CFF'" class=" dark:invert" stroke="none">
-            <path d="M500 1310 l-125 -5 -182 -315 c-100 -173 -182 -321 -182 -329 -1 -7
-            81 -159 181 -337 l183 -324 372 0 371 0 186 325 c102 179 186 330 186 337 0 7
-            -82 157 -182 335 l-183 323 -250 -2 c-137 -1 -306 -5 -375 -8z m588 -454 c61
-            -106 112 -197 112 -201 0 -4 -50 -95 -111 -201 l-112 -194 -231 0 -231 0 -105
-            181 c-58 100 -109 190 -114 200 -6 14 17 63 104 213 l112 196 232 0 231 0 113
-            -194z"/>
-            <path d="M591 1001 l-54 -6 -87 -150 -88 -150 176 -3 c97 -1 181 -1 187 2 9 3
-            165 267 183 308 4 9 -233 7 -317 -1z"/>
-            <path d="M872 824 l-90 -159 36 -66 c113 -201 147 -258 153 -251 8 8 179 302
-            179 307 0 2 -37 68 -83 147 -46 78 -88 151 -94 162 -9 16 -24 -5 -101 -140z"/>
-            <path d="M360 625 c0 -7 148 -263 172 -297 l19 -28 186 0 c101 0 183 3 181 8
-            -1 4 -43 78 -93 165 l-90 157 -187 0 c-104 0 -188 -2 -188 -5z"/>
-          </g>
-        </svg>
+		<svg version="1.0" svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.000000 150.000000"><circle cx="191.3254" cy="191.3254" r="191.3254" fill="#fff"/><path d="m191.3254,27.08419C100.61745,27.08419,27.08419,100.61751,27.08419,191.3254s73.53326,164.24121,164.24121,164.24121,164.24121-73.53326,164.24121-164.24121S282.03334,27.08419,191.3254,27.08419Zm104.58002,189.44122c-1.08002,16.20001-12.23999,29.52002-12.23999,29.52002l19.43994,21.23999-36.71997,34.56-18.71997-19.08002c-13.32001,10.08002-31.32001,13.14001-31.32001,13.14001v28.62h-49.67999v-29.88c-8.28003,2.16003-31.32001-11.88-31.32001-11.88l-20.52002,19.44-33.47998-34.91998,18.71716-19.8454c-8.27997-9.35999-14.39716-33.07458-14.39716-33.07458h-26.28003v-48.60004l28.79999-.35999c2.88-19.79999,11.52002-32.40002,11.52002-32.40002l-18.35999-18.71997,34.91998-34.56,19.79999,18.71997c14.76001-7.56,30.60004-12.59998,30.60004-12.59998l.35999-27.72003h50.03998l.35999,28.08002c14.40002,3.60004,31.67999,11.88,31.67999,11.88l20.16003-18.71997,34.56,36.35999-19.44,18.71997c8.28003,15.48004,12.23999,32.04004,12.23999,32.04004h26.64001v50.03998h-27.35999Z" fill="#141a46"/><circle cx="191.3254" cy="191.32541" r="57.78002" fill="#141a46"/></svg>
       </div>
       <h1 class="text-primary dark:invert text-3xl md:!text-6xl font-bold">
-        {{ $t('pages.title') }}
+        Cogwheel Explorer
       </h1>
-      <div class="badge badge-primary badge-outline dark:invert mt-1 text-sm md:!mt-8">
-        {{ $t('pages.tag') }}
-      </div>
     </div>
     <div class="text-center text-base">
       <p class="mb-1">
-        {{ $t('pages.slogan') }}
+        Cogwheel Explorer serves as a highly efficient and sophisticated platform,
+		designed to cater to your asset management needs with utmost precision and convenience.
       </p>
-      <h2 class="mb-6">{{ $t('pages.description') }}</h2>
+      <h2 class="mb-6">Provided to you by your favorate validator Cogwheel⚙️</h2>
     </div>
     <div
       v-if="dashboard.status !== LoadingStatus.Loaded"

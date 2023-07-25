@@ -1,7 +1,7 @@
 {
     "chain_name": "dyson-protocol",
-    "api": ["https://dys-api.dysonprotocol.com", "https://dys-api.dyson.lol"], 
-    "rpc": ["https://dys-tm.dysonprotocol.com","https://dys-tm.dyson.lol"],
+    "api": ["https://dyson-api.cogwheel.zone","https://dys-api.dysonprotocol.com"], 
+    "rpc": ["https://dyson-rpc.cogwheel.zone","https://dys-tm.dysonprotocol.com"],
     "sdk_version": "0.46.7",
     "coin_type": "118",
     "min_tx_fee": "10",

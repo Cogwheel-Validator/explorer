@@ -1,0 +1,19 @@
+{
+    "chain_name": "Babylon-Testnet",
+    "api": [
+        "https://api-babylon.nodeist.net","https://api-t.babylon.nodestake.top"
+    ],
+    "rpc": ["https://rpc-babylon.nodeist.net","https://rpc-t.babylon.nodestake.top"],
+    "sdk_version": "0.47.3",
+    "coin_type": "118",
+    "min_tx_fee": "0.025ubbn",
+    "addr_prefix": "bbn",
+    "logo": "/logos/babylon.jpg",
+    "assets": [{
+        "base": "ubbn",
+        "symbol": "BBN",
+        "exponent": "6",
+        "coingecko_id": "",
+        "logo": ""
+    }]
+}
