@@ -19,6 +19,9 @@ const dashboard = useDashboard();
 dashboard.initial();
 const blockchain = useBlockchain();
 
+import REstake from '../../../public/logos/restake';
+
+
 const current = ref('');
 blockchain.$subscribe((m, s) => {
   if (current.value != s.chainName) {
@@ -204,6 +207,38 @@ function selected(route: any, nav: NavLink) {
           {{ item?.heading }}
         </div>
       </div>
+	  <div class="px-2">
+        <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Apps and Services</div>
+        <a
+          href="https://restake.cogwheel.zone"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <img
+            src="{REstake}"
+            class="w-6 h-6 rounded-full mr-3"
+          />
+          <div
+            class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            REstake App
+          </div>
+        </a>
+		<a
+          href="https://dys.cogwheel.zone"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <img
+            src="https://dys.dysonprotocol.com/static/dys-inverted.svg"
+            class="w-6 h-6 rounded-full mr-3"
+          />
+          <div
+            class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            Dyson Dashboard
+          </div>
+        </a>
       <div class="px-2">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Links</div>
         <a
@@ -228,18 +263,6 @@ function selected(route: any, nav: NavLink) {
             class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
             Website
-          </div>
-        </a>
-		<a
-          href="https://restake.cogwheel.zone"
-          target="_blank"
-          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <Icon icon="mdi:rotate-orbit" class="text-xl mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            REstake App
           </div>
         </a>
         <a
