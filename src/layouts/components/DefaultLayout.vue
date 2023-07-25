@@ -19,9 +19,6 @@ const dashboard = useDashboard();
 dashboard.initial();
 const blockchain = useBlockchain();
 
-import REstake from '../../../public/logos/restake';
-
-
 const current = ref('');
 blockchain.$subscribe((m, s) => {
   if (current.value != s.chainName) {
@@ -207,7 +204,7 @@ function selected(route: any, nav: NavLink) {
           {{ item?.heading }}
         </div>
       </div>
-	  <div class="px-2">
+	    <div class="px-2">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Apps and Services</div>
         <a
           href="https://restake.cogwheel.zone"
@@ -215,7 +212,7 @@ function selected(route: any, nav: NavLink) {
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="{REstake}"
+            :src="/restake.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
@@ -224,7 +221,7 @@ function selected(route: any, nav: NavLink) {
             REstake App
           </div>
         </a>
-		<a
+		    <a
           href="https://dys.cogwheel.zone"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
@@ -239,6 +236,7 @@ function selected(route: any, nav: NavLink) {
             Dyson Dashboard
           </div>
         </a>
+      </div>
       <div class="px-2">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Links</div>
         <a
@@ -313,5 +311,6 @@ function selected(route: any, nav: NavLink) {
 
       <newFooter />
     </div>
+  </div>
   </div>
 </template>
