@@ -232,21 +232,17 @@ export const useFormatter = defineStore('formatter', {
               unit = x;
             }
           });
-      if (unit.exponent >= 0) {
-        if (unit.exponent === 0) {
-          // Exponent is 0, so no need to scale amount
-          denom = unit.denom.toUpperCase();
-        } else {
-          // Exponent is greater than 0, scale amount accordingly
-          amount = amount / Math.pow(10, unit.exponent);
-          denom = unit.denom.toUpperCase();
+          if (unit && unit.exponent > 0) {
+            amount = amount / Math.pow(10, unit.exponent || 6);
+            denom = unit.denom.toUpperCase();
+          }
         }
+        return `${numeral(amount).format(fmt)} ${
+          withDenom ? denom.substring(0, 10) : ''
+        }`;
       }
-    }
-    return `${numeral(amount).format('0,0.[0]')} ${
-      withDenom ? denom.substring(0, 10) : ''
-    }`;
-  },
+      return '-';
+    },
     formatTokens(
       tokens?: { denom: string; amount: string }[],
       withDenom = true,
