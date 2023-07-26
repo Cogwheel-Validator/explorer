@@ -232,9 +232,7 @@ function selected(route: any, nav: NavLink) {
           >
             Dyson Dashboard
           </div>
-        </a>
-
-      <div class="px-2">
+        </a>	  
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Links</div>
         <a
           href="https://twitter.com/cogwheel_val"
@@ -308,4 +306,6 @@ function selected(route: any, nav: NavLink) {
 
       <newFooter />
     </div>
+  </div>		
 </template>
+
