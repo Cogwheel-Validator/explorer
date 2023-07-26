@@ -204,24 +204,21 @@ function selected(route: any, nav: NavLink) {
           {{ item?.heading }}
         </div>
       </div>
-	    <div class="px-2">
+      <div class="px-2">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Apps and Services</div>
         <a
           href="https://restake.cogwheel.zone"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <img
-            :src="/restake.png"
-            class="w-6 h-6 rounded-full mr-3"
-          />
+          <Icon icon="mdi:react" class="text-xl mr-2" />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
             REstake App
           </div>
         </a>
-		    <a
+        <a
           href="https://dys.cogwheel.zone"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
@@ -236,7 +233,7 @@ function selected(route: any, nav: NavLink) {
             Dyson Dashboard
           </div>
         </a>
-      </div>
+
       <div class="px-2">
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">Links</div>
         <a
@@ -311,6 +308,5 @@ function selected(route: any, nav: NavLink) {
 
       <newFooter />
     </div>
-  </div>
   </div>
 </template>
